@@ -1,15 +1,10 @@
-
 .menu {
   display: flex;
-  /*display: grid;
-  grid-auto-rows: min-content;
-  grid-template-columns: 1fr 1fr;*/
   gap: 1.6rem;
   height: auto;
   padding: 1.6rem;
   position: sticky;
 }
-
 
 .modal {
   display: flex;

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import RectIcon from 'assets/rectangle.svg';
 import ArrowIcon from 'assets/arrow.svg';
 import CircleIcon from 'assets/circle.svg';
+import PointerIcon from 'assets/pointer.svg';
 import styles from './Menu.module.scss';
 import { useAppContext } from 'services/context.ts';
 import { DrawAction } from 'types/figuresTypes.ts';
@@ -18,8 +19,13 @@ const Menu = () => {
 
   return (
     <div className={styles.menu}>
-      <button onClick={() => setShowFig(!showFig)}>1</button>
-      <button onClick={() => setDrawAction(DrawAction.Select)}>2</button>
+      <button onClick={() => setShowFig(!showFig)}>Фигуры</button>
+      <button onClick={() => setDrawAction(DrawAction.Select)}>
+        <img
+          src={PointerIcon}
+          alt="Pointer"
+        />
+      </button>
       {showFig && (
         <div className={styles.modal}>
           <button onClick={() => setDrawAction(DrawAction.Arrow)}>

@@ -23,7 +23,7 @@
       "services/*": ["services/*"],
       "utils/*": ["utils/*"],
       "components/*": ["components/*"],
-      "types/*": ["types/*"],
+      "types/*": ["types/*"]
     },
 
     /* Linting */
