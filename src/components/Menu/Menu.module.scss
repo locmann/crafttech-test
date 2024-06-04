@@ -1,0 +1,19 @@
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  grid-auto-rows: min-content;
+  width: 12.8rem;
+  height: 12.8rem;
+  padding: 1.6rem;
+  position: sticky;
+}
+
+
+.modal {
+  display: flex;
+  gap: 1.6rem;
+  border: 1px solid;
+  border-radius: 1.6rem;
+}
