@@ -4,12 +4,12 @@ import { Arrow, Circle, DrawAction, Rectangle } from 'types/figuresTypes.ts';
 type ContextType = {
   drawAction: DrawAction | null;
   setDrawAction: (drawAction: DrawAction) => void;
-  rect: Rectangle | null;
-  setRect: React.Dispatch<React.SetStateAction<Rectangle | null>>;
-  arrow: Arrow | null;
-  setArrow: React.Dispatch<React.SetStateAction<Arrow | null>>;
-  circle: Circle | null;
-  setCircle: React.Dispatch<React.SetStateAction<Circle | null>>;
+  rect: Rectangle[];
+  setRect: React.Dispatch<React.SetStateAction<Rectangle[]>>;
+  arrow: Arrow[];
+  setArrow: React.Dispatch<React.SetStateAction<Arrow[]>>;
+  circle: Circle[];
+  setCircle: React.Dispatch<React.SetStateAction<Circle[]>>;
 };
 
 export const AppContext = createContext<ContextType | undefined>(undefined);

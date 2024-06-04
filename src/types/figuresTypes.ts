@@ -18,10 +18,6 @@ export type Circle = Shape & {
   y: number;
 };
 
-export type Scribble = Shape & {
-  points: number[];
-};
-
 export type Arrow = Shape & {
   points: [number, number, number, number];
 };
@@ -30,6 +26,5 @@ export enum DrawAction {
   Select = 'select',
   Rectangle = 'rectangle',
   Circle = 'circle',
-  Scribble = 'freedraw',
   Arrow = 'arrow',
 }
